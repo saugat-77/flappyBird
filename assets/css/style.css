@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    }
+
+.gameContainer{
+    /* border: 1px solid black; */
+    position: relative;
+    background-image: url(../images/background-day.png);
+    background-size: cover;
+    height: 550px;
+    width: 340px;
+    justify-content: center;
+    background-repeat:no-repeat;
+    overflow: hidden;
+    
+}
+
+.baseContainer{
+    bottom: 0;
+    position: absolute;
+    background-image: url(../images/base.png);
+    height: 75px;
+    width: 340px;
+    overflow: hidden;
+    background-repeat: repeat-x;
+    animation: animateFloor 5s linear infinite;
+}
+
+.pipeDown1{
+    background-repeat: no-repeat;
+    /* border: 2px solid black; */
+    background-image: url(../images/pipe-green.png);
+    /* animation: animatepipe 5s linear infinite; */
+    /* animation-timing-function: ease-in-out; */
+
+
+
+}
+.pipeUp1{
+    background-repeat: no-repeat;
+
+    background-image: url(../images/pipe-green.png);
+    transform: rotate(180deg);
+
+
+}
+.birdImg{
+    background-image: url(../images/bluebird-midflap.png);
+
+}
+
+
+
+@keyframes animateFloor {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -500px 0;
+    }
+    
+}
